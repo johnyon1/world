@@ -1,58 +1,27 @@
 version: 2.1
 jobs:
-    Devop:
+    Yamtum:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
             command: timeout 1m lscpu
-    Devop1:
+    Yamtum1:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
             command: timeout 1m lscpu
-    Devop2:
+    Yantum2:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
             command: timeout 1m lscpu
-    Devop3:
-      docker:
-            - image: circleci/ruby:2.5.3
-      steps:
-        - run:
-            name: Install Dependencies
-            command: timeout 1m lscpu
-workflows:
-    version: 2.1version: 2.1
-jobs:
-    World:
-      docker:
-            - image: circleci/ruby:2.5.3
-      steps:
-        - run:
-            name: Install Dependencies
-            command: timeout 1m lscpu
-    World1:
-      docker:
-            - image: circleci/ruby:2.5.3
-      steps:
-        - run:
-            name: Install Dependencies
-            command: timeout 1m lscpu
-    World2:
-      docker:
-            - image: circleci/ruby:2.5.3
-      steps:
-        - run:
-            name: Install Dependencies
-            command: timeout 1m lscpu
-    World3:
+    Yamtum3:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
@@ -63,13 +32,7 @@ workflows:
     version: 2.1
     build:
         jobs:
-            - workd
-            - world1
-            - world2
-            - worls3
-    build:
-        jobs:
-            - devop
-            - devop1
-            - devop2
-            - devop3
+            - Yamtum
+            - Yamtum1
+            - Yamtum2
+            - Yamtum3
