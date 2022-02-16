@@ -29,7 +29,44 @@ jobs:
             name: Install Dependencies
             command: timeout 1m lscpu
 workflows:
+    version: 2.1version: 2.1
+jobs:
+    World:
+      docker:
+            - image: circleci/ruby:2.5.3
+      steps:
+        - run:
+            name: Install Dependencies
+            command: timeout 1m lscpu
+    World1:
+      docker:
+            - image: circleci/ruby:2.5.3
+      steps:
+        - run:
+            name: Install Dependencies
+            command: timeout 1m lscpu
+    World2:
+      docker:
+            - image: circleci/ruby:2.5.3
+      steps:
+        - run:
+            name: Install Dependencies
+            command: timeout 1m lscpu
+    World3:
+      docker:
+            - image: circleci/ruby:2.5.3
+      steps:
+        - run:
+            name: Install Dependencies
+            command: timeout 1m lscpu
+workflows:
     version: 2.1
+    build:
+        jobs:
+            - workd
+            - world1
+            - world2
+            - worls3
     build:
         jobs:
             - devop
