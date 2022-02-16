@@ -32,7 +32,7 @@ workflows:
     version: 2.1
     build:
         jobs:
-            - world
-            - world1
-            - world2
-            - world3
+            - devop
+            - devop1
+            - devop2
+            - devop3
